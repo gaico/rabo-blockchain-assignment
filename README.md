@@ -6,7 +6,8 @@ They now have a centralized system for the administration of their coin. I kind 
 Playing around with web3j has been on my wishlist for a little while so i decided to create a frontend/backend application using spring boot and web3j at the back and ionic at the front.
 
 ### Backend
-The backend is finished but could do with a little cleanup, it consists of three restfull services. After starting the backend application they can be triggered dirctly from the browser at:  
+The backend is finished but could do with a little cleanup, it consists of three restfull services. 
+After starting the backend application they can be triggered directly from the browser at:  
 - http://localhost:8080/users  
 - http://server/user/Summer  
 - http://server/user/Rick/transfer?to=Summer&amount=1000  
