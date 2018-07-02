@@ -5,15 +5,15 @@ They now have a centralized system for the administration of their coin. I kind 
 
 Playing around with web3j has been on my wishlist for a little while so i decided to create a frontend/backend application using spring boot and web3j at the back and ionic at the front.
 
-## Backend
-The backend is finished but could do with a little cleanup, it consists of three restfull services:  
-- http://server/users  
+### Backend
+The backend is finished but could do with a little cleanup, it consists of three restfull services. After starting the backend application they can be triggered dirctly from the browser at:  
+- http://localhost:8080/users  
 - http://server/user/Summer  
-- http://server/user/Rick/transfer?to=Summer&amount=1000
+- http://server/user/Rick/transfer?to=Summer&amount=1000  
 
-The transfers of blieken can be viewed at the here: https://ropsten.etherscan.io/address/0x06a6be20a421f568bbee64459a902e620b6d6387
+The transfers of blieken can be viewed here: https://ropsten.etherscan.io/address/0x06a6be20a421f568bbee64459a902e620b6d6387
 
-## Frontend
+### Frontend
 The frontend is a long way from being finished, login, security a nice interface, all that and more is missing.
 Only the most basic functionality has been implemented.
 Users and their balances can be viewed and blieken can be transferred.  
@@ -22,16 +22,18 @@ I had a lot of trouble with Ionic an Angular, I probably would be a lot further 
   I implemented the functionality synchronous so the whole thing is very sluggish, some async and a list of pending transactions would be very nice.
 
 
-## Running the application on your local machine
+### Running the application on your local machine
 Prerequisites:  
-Java 8 installed (make sure this does not have the Rabobank version Bouncy Castle)
-Node.js installed
-Ionic installed
+- Java 8 installed (make sure this does not have the Rabobank version Bouncy Castle)
+- Node.js installed
+- Ionic installed
 
 Open a terminal window. Go to the target folder and run: "java -jar rabo-erc20-blockbliek-0.0.1-SNAPSHOT.jar".
 This will start the backend.
-Unzip ionic-front-end.zip. Go to the folder where you unzipped the file and run: "ionic serve". This will start the frontend.  
+Unzip ionic-front-end.zip. Go to the folder where you unzipped the files and run: "ionic serve". 
+This will start the frontend.  
 Open a browser window at: http://localhost:8100/.  
+
 Please be patient and try to transfer some blieken!
 
 
