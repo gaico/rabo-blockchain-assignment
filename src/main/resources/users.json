@@ -1,0 +1,28 @@
+
+[
+    {
+      "name":"Rick",
+      "password":"rick",
+      "address":"0x7aDaB81012203A75391B6673e07B7131177237B1",
+      "wallet" : {
+        "password":"RickRickRick",
+        "file":"/Users/gaico/projects/gaico/rabo-blockchain-assignment/src/main/resources/keystores/rick/UTC--2018-07-01T10-36-43.217Z--7adab81012203a75391b6673e07b7131177237b1"
+      }
+    },{
+      "name":"Morty",
+      "password":"morty",
+      "address":"0x7Ad11050F1e257004DEE8dac4ba50f5713c494EE",
+      "wallet" : {
+        "password":"MortyMortyMorty",
+        "file" : "/Users/gaico/projects/gaico/rabo-blockchain-assignment/src/main/resources/keystores/morty/UTC--2018-07-01T10-46-47.501Z--7ad11050f1e257004dee8dac4ba50f5713c494ee"
+      }
+    },{
+      "name":"Summer",
+      "password":"summer",
+      "address":"0x3dbBd44a78C745cD8073C9E48557F1bcFdC2015c",
+      "wallet" : {
+        "password":"SummerSummerSummer",
+        "file" : "/Users/gaico/projects/gaico/rabo-blockchain-assignment/src/main/resources/keystores/summer/UTC--2018-07-01T10-51-19.827Z--3dbbd44a78c745cd8073c9e48557f1bcfdc2015c"
+      }
+    }
+  ]

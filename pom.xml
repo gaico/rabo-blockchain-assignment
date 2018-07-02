@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<repositories>
+	    <repository>
+	      <id>java.net</id>
+	      <url>https://maven.java.net/content/repositories/public/</url>
+	    </repository>
+			<repository>
+	      <id>java.net2</id>
+	      <url>https://mvnrepository.com/artifact/junit/junit</url>
+	    </repository>
+	 </repositories>
+
+	<groupId>nl.gst</groupId>
+	<artifactId>rabo-erc20-blockbliek</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>rabo-erc20-blockbliek</name>
+	<description>Rabo blocjcain team opdracht</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.3.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.web3j</groupId>
+		    <artifactId>core</artifactId>
+		    <version>3.4.0</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.web3j</groupId>
+		    <artifactId>codegen</artifactId>
+		    <version>3.4.0</version>
+		</dependency>
+
+		<!--<dependency>-->
+			<!--<groupId>org.web3j</groupId>-->
+			<!--<artifactId>web3j-spring-boot-starter</artifactId>-->
+			<!--<version>1.6.0</version>-->
+		<!--</dependency>-->
+
+		<dependency>
+			<groupId>org.ethereum</groupId>
+			<artifactId>solcJ-all</artifactId>
+			<version>0.4.19</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		    <version>2.8.5</version>
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-ext-jdk15 -->
+		<!--<dependency>-->
+			<!--<groupId>org.bouncycastle</groupId>-->
+			<!--<artifactId>bcprov-jdk15on</artifactId>-->
+			<!--<version>1.54</version>-->
+		<!--</dependency>-->
+
+
+
+		<!--<dependency>-->
+			<!--<groupId>org.bouncycastle</groupId>-->
+			<!--<artifactId>bcprov-jdk15on</artifactId>-->
+			<!--<version>1.59</version>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.bouncycastle</groupId>-->
+			<!--<artifactId>bcpkix-jdk15on</artifactId>-->
+			<!--<version>1.59</version>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.bouncycastle</groupId>-->
+			<!--<artifactId>bcmail-jdk15on</artifactId>-->
+			<!--<version>1.59</version>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.bouncycastle</groupId>-->
+			<!--<artifactId>bcpg-jdk15on</artifactId>-->
+			<!--<version>1.59</version>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.bouncycastle</groupId>-->
+			<!--<artifactId>bcprov-ext-jdk15on</artifactId>-->
+			<!--<version>1.59</version>-->
+		<!--</dependency>-->
+
+
+
+
+
+
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>4.12</version>
+		    <scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+
+        <plugin>
+            <groupId>org.web3j</groupId>
+            <artifactId>web3j-maven-plugin</artifactId>
+            <version>0.3.0</version>
+<configuration>
+			<packageName>nl.gst.rabo.blockbliek.model.token</packageName>
+			<sourceDestination>src/main/java</sourceDestination>
+			<nativeJavaType>true</nativeJavaType>
+			<soliditySourceFiles>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.sol</include>
+				</includes>
+			</soliditySourceFiles>
+</configuration>
+        </plugin>
+
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
