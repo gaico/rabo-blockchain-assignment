@@ -17,10 +17,9 @@ The transfers of blieken can be viewed here: https://ropsten.etherscan.io/addres
 The frontend is a long way from being finished, login, security a nice interface, all that and more is missing.
 Only the most basic functionality has been implemented.
 Users and their balances can be viewed and blieken can be transferred.  
-I had a lot of trouble with Ionic an Angular, I probably would be a lot further if i would have used vanilla javascript and htlm 5, but the trip was fun and educational :-)  
+I experienced a bit of a learning curve with Ionic an Angular, maybe for the end result it would have been better for me to have used vanilla javascript and HTML 5, but then trip would have been less educational :-)  
   
   I implemented the functionality synchronous so the whole thing is very sluggish, some async and a list of pending transactions would be very nice.
-
 
 ### Running the application on your local machine
 Prerequisites:  
@@ -34,7 +33,7 @@ Unzip ionic-front-end.zip. Go to the folder where you unzipped the files and run
 This will start the frontend.  
 Open a browser window at: http://localhost:8100/.  
 
-Please be patient and try to transfer some blieken!
+Please be patient and try to transfer some blieken! A transfer takes around 30 seconds and loading the balances around 5.
 
 
 
