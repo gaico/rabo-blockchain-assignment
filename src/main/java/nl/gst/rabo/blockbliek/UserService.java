@@ -16,8 +16,13 @@ public class UserService {
         this.blockBliekService = blockBliekService;
     }
 
-    public List<User> getUsers() {
-        return userRepository.getUsers();
+    public List<User> getUsers() throws Exception {
+        List<User> out = new ArrayList<>();
+        for(User user: userRepository.getUsers()){
+            user.setBalance(blockBliekService.getBalance(user));
+            out.add(user);
+        }
+        return out;
     }
 
     public User getUser(String userName) throws Exception {
@@ -32,9 +37,9 @@ public class UserService {
 
         blockBliekService.transfer(userFrom, userTo, amount);
 
-        List<User> out = new ArrayList<>(Arrays.asList(userFrom, userTo));
+        return getUsers();
 
-        return out;
+        //return out;
 
     }
 }
