@@ -5,7 +5,7 @@ They now have a centralized system for the administration of their coin. I kind 
 
 Playing around with web3j has been on my wishlist for a little while so i decided to create a frontend/backend application using spring boot and web3j at the back and ionic at the front.
 
-##Backend
+#Backend
 The backend consits of three restfull services:  
 http://server/users  
 http://server/user/Summer  
@@ -13,7 +13,7 @@ http://server/user/Rick/transfer?to=Summer&amount=1000
 
 The transfers can be viewed at the here: https://ropsten.etherscan.io/address/0x06a6be20a421f568bbee64459a902e620b6d6387
 
-##Status
+#Status
 The backend is finished but could do with a little cleanup.  
 The frontend is a long way from being finished, login, security a nice interface, all that and more is missing.
 Only the most basic functionality has been implemented.
@@ -23,7 +23,7 @@ I had a lot of trouble with Ionic an Angular, I probably would be a lot further 
   I implemented the functionality synchronous so the whole thing is very sluggish, some async and a list of pending transactions would be very nice.
 
 
-##Running the application on your local machine
+#Running the application on your local machine
 Prerequisites:  
 Java 8 installed (make sure this does not have the Rabobank version Bouncy Castle)
 Node.js installed
